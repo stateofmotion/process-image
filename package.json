@@ -1,10 +1,15 @@
 {
   "name": "imageoptimize",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Generate a thumbnail, mobile, and tablet version of an image",
+  "main": "./lib/process-image.js",
   "scripts": {
-    "dev": "babel -w ./src --out-dir ./lib"
+    "dev": "babel -w ./src --out-dir ./lib",
+    "build": "babel ./src --out-dir ./lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stateofmotion/process-image.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.3",
